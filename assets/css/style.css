@@ -1,14 +1,20 @@
+/* Added font size to the universal elements*/
+
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-size: 16;
 }
+
+/*Changed background color to white and color to blue*/
 
 body {
-    background-color: #2a607c;
-    color:#ffffff white
+    Color: #2a607c;
+    background-color: white
 }
 
+/*Took out all the class identifiers for the headers*/
 
 header {
     padding: 20px;
@@ -23,8 +29,10 @@ header h1 {
 }
 
 .seo {
-    color: #d9dcd6
+    color: #d9dcd6;
 }
+
+/*Changed header div to header nav to be more descriptive of the type of header here, changed the margin on the right to 10px instead of 20px*/
 
 header nav {
     padding-top: 15px;
@@ -33,6 +41,7 @@ header nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
 }
+/*changed all headers for the nav to header nav ul instead of header div for more clarity*/
 
 header nav ul {
     justify-content:left;
@@ -47,7 +56,7 @@ header nav ul li {
 a {
     color: #ffffff;
     text-decoration: none;
-}
+    }
 
 p {
     font-size: 16px;
@@ -61,6 +70,8 @@ p {
     background-size: cover;
     background-position: center;
 }
+
+/*combined both left and right float into one comment*/
 
 .float-left, .float-right {
     float: left;
@@ -84,11 +95,15 @@ p {
     background-color: #2589bd;
 }
 
+/*combined the benefit-lead, benefit-brand and benefit-cost to condense the code*/
+
 .benefit-lead, .benefit-brand, .benefit-cost {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
+/*combined the benefit-lead h3,
+benefit-brand h3 and benefit-cost h3 to condense the code*/
 
 .benefit-lead h3, .benefit-brand h3, .benefit-cost h3 {
     margin-bottom: 10px;
@@ -96,12 +111,16 @@ p {
 }
 
 
+/*combined the benefit-lead img,
+benefit-brand img and benefit-cost img to condense the code*/
+
 .benefit-lead img , .benefit-brand img, .benefit-cost img{
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
+/*combined search-engine-optimization, online-reputation-management and social-media-marketing to condense code*/
 
 .search-engine-optimization, .online-reputation-management,.social-media-marketing {
     margin-bottom: 20px;
@@ -112,6 +131,8 @@ p {
     color: #ffffff;
 }
 
+/*combined search-engine-optimization img, online-reputation-management img and social-media-marketing img to condense code*/
+
 .search-engine-optimization img, .online-reputation-management img, .social-media-marketing img {
     max-height: 200px;
 }
@@ -121,13 +142,17 @@ p {
     font-size: 36px;
 }
 
+/* Added visibility hidden property to both footers to hide from website, yet maintain the space at the bottom for it if needed.*/
+
 .footer {
     padding: 30px;
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: center;
+    text-align: center; 
+    visibility: hidden;
 }
 
 .footer h2 {
     font-size: 20px;
+    visibility: hidden;   
 }
